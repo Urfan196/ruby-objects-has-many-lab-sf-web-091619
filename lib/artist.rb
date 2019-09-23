@@ -13,7 +13,7 @@ attr_accessor :name
   def songs
   Song.all? { |song| song.artist == self}
   end
-  
+
   # def add_song (song)
   #   @songs << Song.new(song)
   # end
