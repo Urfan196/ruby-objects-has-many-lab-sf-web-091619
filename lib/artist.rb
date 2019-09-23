@@ -20,7 +20,7 @@ attr_accessor :name
   end
 
   def self.add_song_by_name
-    songs.count
+    Song.all.count
   end
 
 
