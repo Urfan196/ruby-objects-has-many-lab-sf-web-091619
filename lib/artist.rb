@@ -6,13 +6,18 @@ attr_accessor :name
   @name = name
   end
 
+  def add_song (song)
+    song.artist = self
+  end
+
   def add_song_by_name (title)
     song = Song.new (title)
-    song.artist = self
+    add_song
   end
 
   def songs
   Song.all? { |song| song.artist == self}
   end
+
 
 end
